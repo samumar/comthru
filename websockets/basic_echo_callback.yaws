@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<websocket>
+<erl>
+
+
+  get_upgrade_header(#headers{other=L}) ->
+      lists:foldl(fun({http_header,_,KO,_,V}, undefined) ->
+                          K = case is_atom(KO) of
+                                  true ->
+                                      atom_to_list(KO);
+                                  false ->
+                                      KO
+                              end,
+                          case string:to_lower(K) of
+                              "Upgrade" ->
+                                  true;
+                              _ ->
+                                  false
+                          end;
+                      (_, Acc) ->
+                           Acc
+                  end, false, L).
+
+
+%%------------------------------------------------------------------------------
+
+out(Arg) ->
+    case get_upgrade_header(Arg#arg.headers) of
+    true ->
+        error_logger:warning_msg("Not a web socket client~n"),
+        {content, "text/plain", "You're not a web sockets client! Go away!"};
+    false ->
+        error_logger:info_msg("Starting web socket~n"),
+        {websocket, basic_echo_callback, []}
+    end.
+
+</erl>
+</websocket>
