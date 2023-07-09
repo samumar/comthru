@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{background-color:black no-repeat; background-size:100%}
+@media only screen and (min-width:300px){
+  body {
+    background-color:black;
+  }
+}
+@font-face {
+  src: url(Open_Sans/OpenSans-Light.ttf);
+  font-family: 'Open Sans', sans-serif;
+
+}
+.paragraph {
+  font-size: 25px;
+  line-height: 62px;
+  font-family: 'Open Sans',sans-serif;
+}
+#video {
+   /* mirror video */
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      display: block;
+      position: relative;
+      width: auto;
+      height: 100vh;
+      z-index: 999;
+      pointer-events: none;
+      margin: auto;
+  }
+#circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #fff;
+}

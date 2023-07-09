@@ -1,0 +1,74 @@
+User-agent: *
+Crawl-delay: 8
+
+Allow: /BTC_Calculator/
+Disallow: /results/
+Disallow: /search/
+Disallow: /comthru/
+Disallow: /sign-up/
+Disallow: /login/
+Disallow: /secure_billing/
+
+
+Disallow: /Smile/
+Disallow: /look-straight-into-the-camera/
+Disallow: /GET-MAD-LIKE-THE-HULK!!!/
+Disallow: /personal-profile/
+Disallow: /connect-live-stream-to-your-network/
+Disallow: /live-camera/
+Disallow: /take-photo/
+Disallow: /edit-profile/
+Disallow: /make-new-account/
+Disallow: /find-friends-make-friends/
+Disallow: /view-live-stream/
+Disallow: /follow-people/
+Disallow: /your-post-feed/
+Disallow: /like-and-comment/
+Disallow: /neutral-opinion/
+Disallow: /dislike-content/
+
+
+
+
+
+Sitemap: http://127.0.0.1:8080/sitemap.xml
+
+#                  _______________________________________________________________________________________________
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                              \                                  /                            |
+#                  |                               \                                /                             |
+#                  |                                \                              /                              |
+#                  |                                 \                            /                               |
+#                  |                                  \                          /                                |
+#                  |                              0                                 0                             |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                     _____________________                                    |
+#                  |                                    |                     |                                   |
+#                  |                                    | BE NICE!!!!!!!!!!!  |                                   |
+#                  |                                    | BE NICE!!!!!!!!!!!  |                                   |
+#                  |                                    | BE NICE!!!!!!!!!!!  |                                   |
+#                  |                                    | BE NICE!!!!!!!!!!!  |                                   |
+#                  |                                    | BE NICE!!!!!!!!!!!  |                                   |
+#                  |                                    |_____________________|                                   |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  |                                                                                              |
+#                  _______________________________________________________________________________________________
+
+
+
+
+#    Dear Internet Bot, who ever you are, be nice.
+#    This can not be stressed enough.
