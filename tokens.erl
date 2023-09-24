@@ -33,14 +33,14 @@ say_hi(Pid) ->
 
 payout() ->
   Url = "curl https://api.stripe.com/v1/payouts ",
-  SKey = "-u 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: ",
+  SKey = "-u sk_test_51MdNP0BgUxqa83hRfRXoQIs5vwTXGedFJQ4EstS89QVxmM08ot3T3vF8JPONbrYicClIxOjWrySsl8hl3dpP49Su00sx5fDhoP: ",
   Fee = "-d amount=100 ",
   Currency = " -d currency=usd",
   os:cmd([Url, SKey, Fee, Currency]).
 
 generate_account(Address, Card_num, Expir, Sec) ->
   URL = "curl https://api.stripe.com/v1/accounts ",
-  SKey = "-u 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: ",
+  SKey = "-u sk_test_51MdNP0BgUxqa83hRfRXoQIs5vwTXGedFJQ4EstS89QVxmM08ot3T3vF8JPONbrYicClIxOjWrySsl8hl3dpP49Su00sx5fDhoP: ",
   Account = "-d type=custom ",
   Country = "-d country=US ",
   Email = "-d email=" ++ Address,
@@ -61,7 +61,7 @@ generate_account(Address, Card_num, Expir, Sec) ->
 
 transfer_funds(Destiny) ->
   URL = "curl https://api.stripe.com/v1/transfers ",
-  SKey = "-u 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: ",
+  SKey = "-u sk_test_51MdNP0BgUxqa83hRfRXoQIs5vwTXGedFJQ4EstS89QVxmM08ot3T3vF8JPONbrYicClIxOjWrySsl8hl3dpP49Su00sx5fDhoP: ",
   Amount = "-d amount=095 ",
   Currency = "-d currency=usd ",
   User = "-d destination=" ++ Destiny ++ "",
